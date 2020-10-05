@@ -4,22 +4,33 @@ function Navigation() {
     
 
     return (
-        <nav className="navigation">
-            <ul className="navigation-list">
-                <li className="navigation-item">
-                    <a>About me</a>
-                </li>
-                <li className="navigation-item">
-                    <a>Portfolio</a>
-                </li>
-                <li className="navigation-item">
-                    <a>Contact me</a>
-                </li>
-                <li className="navigation-item">
-                    <a>Resume</a>
-                </li>
-            </ul>
-        </nav>
+        <div className="navigation-container">
+            <nav className="navigation">
+                <ul className="navigation-list">
+                    <li className="navigation-item">
+                        <a>
+                            <p>About me</p>
+                        </a>
+                    </li>
+                    <li className="navigation-item">
+                        <a>
+                            <p>Portfolio</p>
+                        </a>
+                    </li>
+                    <li className="navigation-item">
+                        <a>
+                            <p>Contact me</p>
+                        </a>
+                    </li>
+                    <li className="navigation-item">
+                        <a>
+                            <p>Resume</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
     )
 }
 

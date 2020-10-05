@@ -15,7 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: var(--dark);
+  background: var(--primary);
   color: var(--light);
 }
 
@@ -25,31 +25,51 @@ code {
 }
 
 /* for mobile phones: */
+
+/* header styling starts here */
 .header-hero {
-  background-color: #f1faeeff;  
+  background-color: var(--dark);  
 }
 
 .header-container {
-    padding: 1.5rem;
+  padding-top: 10px;
+  display: inline;
 }
 
 .header-title {
-    background-color: #a8dadcff;
+    background-color: var(--tertiary);
     padding: 2rem;
-    padding-left: 20px;
-    border-radius: 20px;
     font-size: 38px;
+    text-align: center;
+    color: var(--dark)
 }
 
+/* Navigation styling starts here */
+.navigation-list {
+  list-style-type: none;
+  display: grid;
+  padding: 1rem;
+}
+
+.navigation-item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--tertiary);
+  border-radius: 10px;
+  text-align: center;
+  color: var(--secondary)
+}
+
+/* footer styling starts here */
 .footer {
-  background: #f1faeeff;
-  height: 5rem;
+  background: var(--dark);
+  height: 5.5rem;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  text-align: center;
 }
-
 
 @media only screen and (min-width: 600px) {
     /* for tablets */
@@ -60,28 +80,5 @@ code {
 
 @media only screen and (min-width: 768px) {
     /* For Desktop */
-    .header-hero {
-        background-color: #f1faeeff;
-        display: flex;
-        padding: 1rem;
-    }
-    
-    .header-title {
-        font-size: 38px;
-        background-color: #a8dadcff;
-        border-radius: 20px;
-        padding: 1.5rem;
-    }
-
-    .navigation-list {
-        list-style-type: none;
-        display: flex;
-        padding: 30px;
-        margin-left: 10rem;
-    }
-    
-    .navigation-item {
-        padding: 2rem;
-        font-size: 20px;
-    }
+   
 }
