@@ -60,20 +60,30 @@ code {
   color: var(--secondary)
 }
 
+/* About me section starts here */
+.aboutme {
+  background: var(--dark);
+  color: var(--secondary);
+  padding: 1rem;
+}
+
 /* footer styling starts here */
 .footer {
   background: var(--dark);
   height: 5.5rem;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
+/* footer styling ends here */
 
 @media only screen and (min-width: 600px) {
     /* for tablets */
-
+  .footer {
+    position: fixed;
+  }
 
 }
 
